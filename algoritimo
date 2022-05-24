@@ -1,0 +1,39 @@
+package ex3;
+import java.util.Scanner;
+public class classific {
+
+	public static void main(String[] args) {
+	try (Scanner ler = new Scanner(System.in)){
+		double ac1, ac2, ag, af, nf;
+		// variaveis declaradas;
+		System.out.println("digite o valor das suas ac1:");
+		// captar a nota da AC1;
+		ac1 = ler.nextDouble();
+		// ler a nota da AC1;
+		System.out.println("digite o valor das suas ac2");
+		// captar a nota da AC2;
+		ac2 = ler.nextDouble();
+		// ler a nota da AC2;
+		System.out.println("digite o valor das suas ag:");
+		// captar a nota da AG;
+		ag = ler.nextDouble();
+		// ler a nota da AG;
+		System.out.println("digite o valor das suas af:");
+		// captar a nota da AF;
+		af = ler.nextDouble();
+		//ler a nota da AF;
+		
+		nf = (ac1 * 0.15) + (ac2 * 0.30) + (ag * 0.10) + (af * 0.45);
+		// calculo da nota final (NF);
+		if (nf >= 5) {
+			System.out.print ("voce foi aprovado com "+ nf +" de media");  
+			// comando de decisao se nao foi aprovado;
+		}
+		else {
+			System.out.print("voce nao foi aprovado pois sua media foi "+nf+"");
+			// comando de decisao se nao foi aprovado;
+		}
+	}
+}
+}
+
